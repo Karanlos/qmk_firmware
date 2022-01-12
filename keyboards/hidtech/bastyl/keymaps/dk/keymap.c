@@ -130,22 +130,25 @@ const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
     );
 
 const rgblight_segment_t PROGMEM my_layer4_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {20, 1, HSV_RED}
+    {20, 1, HSV_BLUE}
     );
 
 const rgblight_segment_t PROGMEM my_layer5_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {16, 1, HSV_RED}
+    {16, 1, HSV_BLUE}
     );
 
 const rgblight_segment_t PROGMEM my_layer6_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {15, 1, HSV_RED}
+    {15, 1, HSV_BLUE}
     );
 //
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     my_capslock_layer,
     my_layer1_layer,
     my_layer2_layer,
-    my_layer3_layer
+    my_layer3_layer,
+    my_layer4_layer,
+    my_layer5_layer,
+    my_layer6_layer
     );
 
 void keyboard_post_init_user(void) {
@@ -158,6 +161,12 @@ layer_state_t default_layer_state_set_user(layer_state_t state) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
+  // TO([NUM]) sets the [NUM] bit to be enabled all the time
+  // even though MO([NUM]) is held.
+  // Unset the TO layers.
+  if (state & ~(1 | 8)) {
+    state = state & ~(1 | 8);
+  }
   rgblight_set_layer_state(1, layer_state_cmp(state, 0));
   rgblight_set_layer_state(2, layer_state_cmp(state, 1));
   rgblight_set_layer_state(3, layer_state_cmp(state, 2));
