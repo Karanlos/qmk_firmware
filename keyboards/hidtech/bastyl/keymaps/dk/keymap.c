@@ -36,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT(
     DK_SECT, DK_EXLM, DK_DQUO, DK_HASH, DK_CURR, DK_PERC,           DK_AMPR, DK_SLSH, DK_LPRN, DK_RPRN, DK_EQL,   DK_DIAE,
 //------------------------------------------------------------//-----------------------------------------------------------//
-    RESET,   _______, KC_DLR, DK_QUOT, DK_DQUO, DK_LBRC,           DK_RBRC, KC_P7,   KC_P8,   KC_P9,   DK_ACUT,  DK_GRV,
+    RESET,   KC_GRV, KC_DLR, DK_QUOT, DK_DQUO, DK_LBRC,           DK_RBRC, KC_P7,   KC_P8,   KC_P9,   DK_ACUT,  DK_GRV,
 //------------------------------------------------------------//-----------------------------------------------------------//
-    _______, KC_HOME, KC_PGUP, KC_PGDN, KC_END,  DK_LPRN,           DK_RPRN, KC_P4,   KC_P5,   KC_P6,   DK_PLUS,  DK_ASTR,
+    KC_NUBS, KC_HOME, KC_PGUP, KC_PGDN, KC_END,  DK_LPRN,           DK_RPRN, KC_P4,   KC_P5,   KC_P6,   DK_PLUS,  DK_ASTR,
 //------------------------------------------------------------//-----------------------------------------------------------//
     TO(3), TO(6), LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RIGHT), DK_LCBR,           DK_RCBR, KC_P1,   KC_P2,   KC_P3,   KC_P0,    DK_LABK,
 //------------------------------------------------------------//-----------------------------------------------------------//
