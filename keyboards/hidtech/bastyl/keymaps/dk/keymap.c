@@ -105,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //-------------------------------------------------//-----------------------------------------------------------//
     KC_LALT, DK_AE, DK_OSTR, DK_ARNG, DK_F, DK_G,           DK_H, DK_J, DK_K,    DK_L,   DK_AE,    DK_OSTR,
 //-------------------------------------------------//-----------------------------------------------------------//
-    KC_F2, DK_Z, DK_X, KC_C, DK_V, DK_B,                  DK_N, DK_M, DK_COMM, DK_DOT, DK_MINS,  DK_LABK,
+    KC_LCTL, DK_Z, DK_X, KC_C, DK_V, DK_B,                  DK_N, DK_M, DK_COMM, DK_DOT, DK_MINS,  DK_LABK,
 //-------------------------------------------------//-----------------------------------------------------------//
                         KC_LEFT, KC_SPC, KC_RIGHT,        MO(2),  KC_ENT, KC_RGUI,
                                  KC_UP,  KC_LSFT,      KC_DEL, KC_RALT
