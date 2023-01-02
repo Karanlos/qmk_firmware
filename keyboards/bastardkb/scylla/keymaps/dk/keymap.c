@@ -1,3 +1,4 @@
+
 /* 
  * Copyright 2020 Quentin LEBASTARD <qlebastard@gmail.com>
  * Copyright 2020 Anthony MARIN <anthony@hidtech.ca>
@@ -112,44 +113,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
-const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {6, 4, HSV_RED},
-    {12, 4, HSV_RED}
-    );
-
-const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {20, 1, HSV_RED}
-    );
-
-const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {16, 1, HSV_RED}
-    );
-
-const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {15, 1, HSV_RED}
-    );
-
-const rgblight_segment_t PROGMEM my_layer4_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {20, 1, HSV_BLUE}
-    );
-
-const rgblight_segment_t PROGMEM my_layer5_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {16, 1, HSV_BLUE}
-    );
-
-const rgblight_segment_t PROGMEM my_layer6_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {15, 1, HSV_BLUE}
-    );
-//
-const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
-    my_capslock_layer,
-    my_layer1_layer,
-    my_layer2_layer,
-    my_layer3_layer,
-    my_layer4_layer,
-    my_layer5_layer,
-    my_layer6_layer
-    );
 /*
 void keyboard_post_init_user(void) {
     rgblight_layers = my_rgb_layers;

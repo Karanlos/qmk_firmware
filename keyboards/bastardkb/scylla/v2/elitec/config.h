@@ -17,5 +17,19 @@
 
 #pragma once
 
+/* Key matrix configuration. */
+#define MATRIX_ROW_PINS \
+    { D7, B5, F7, F6, B6 }
+#define MATRIX_COL_PINS \
+    { B4, E6, C6, B1, B3, B2 }
+
+#define DIODE_DIRECTION COL2ROW
+
 /* Handedness. */
-#define MASTER_RIGHT
+#define MASTER_LEFT
+
+/* serial.c configuration (for split keyboard). */
+#define SOFT_SERIAL_PIN D0
+
+/* RGB settings. */
+#define RGB_DI_PIN D2
