@@ -19,15 +19,17 @@
 
 /* Key matrix configuration. */
 #define MATRIX_ROW_PINS \
-    { F4, F7, C6, D4, B5 }
+    { D7, B5, F7, F6, B6 }
 #define MATRIX_COL_PINS \
-    { F6, F5, B6, D7, E6, B4 }
+    { B4, E6, C6, B1, B3, B2 }
+
+#define DIODE_DIRECTION COL2ROW
 
 /* Handedness. */
-#define MASTER_RIGHT
+#define MASTER_LEFT
 
 /* serial.c configuration (for split keyboard). */
-#define SOFT_SERIAL_PIN D2
+#define SOFT_SERIAL_PIN D0
 
 /* RGB settings. */
-#define RGB_DI_PIN D3
+#define RGB_DI_PIN D2
