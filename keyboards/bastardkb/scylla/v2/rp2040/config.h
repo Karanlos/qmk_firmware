@@ -16,13 +16,13 @@
 /* Key matrix configuration */
 
 #define MATRIX_ROW_PINS \
-   { GP16, GP26, GP5, GP4, GP9 }
+   { GP11, GP12, GP13, GP14, GP15 }
 #define MATRIX_COL_PINS \
-   { GP27, GP28, GP21, GP6, GP7, GP8 }
+   { GP16, GP17, GP18, GP19, GP20, GP21 }
 
 #define MASTER_LEFT
 
-#define SOFT_SERIAL_PIN GP1
+#define SOFT_SERIAL_PIN GP6
 
 #define RGB_DI_PIN GP0
 
