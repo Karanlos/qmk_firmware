@@ -24,7 +24,6 @@
 
 #define SOFT_SERIAL_PIN GP6
 
-#define RGB_DI_PIN GP0
 
 #define DIODE_DIRECTION COL2ROW
 
