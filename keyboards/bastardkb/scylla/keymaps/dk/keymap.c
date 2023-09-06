@@ -37,14 +37,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT_split_4x6_5(
     DK_SECT, DK_EXLM, DK_DQUO, DK_HASH, DK_CURR, DK_PERC,           DK_AMPR, DK_SLSH, DK_LPRN, DK_RPRN, DK_EQL,   DK_DIAE,
 //------------------------------------------------------------//-----------------------------------------------------------//
-    QK_BOOT,   KC_GRV, KC_DLR, DK_QUOT, DK_DQUO, DK_LBRC,           DK_RBRC, KC_P7,   KC_P8,   KC_P9,   DK_ACUT,  DK_GRV,
+    QK_BOOT,   KC_GRV, RALT(DK_4), DK_QUOT, DK_DQUO, DK_LBRC,           DK_RBRC, KC_P7,   KC_P8,   KC_P9,   DK_ACUT,  DK_GRV,
 //------------------------------------------------------------//-----------------------------------------------------------//
     KC_LSFT, KC_HOME, KC_PGUP, KC_PGDN, KC_END,  DK_LPRN,           DK_RPRN, KC_P4,   KC_P5,   KC_P6,   DK_PLUS,  DK_ASTR,
 //------------------------------------------------------------//-----------------------------------------------------------//
     TO(3), TO(6), LGUI(KC_LEFT), LGUI(KC_DOWN), LGUI(KC_RIGHT), DK_LCBR,           DK_RCBR, KC_P1,   KC_P2,   KC_P3,   KC_P0,    DK_LABK,
 //------------------------------------------------------------//-----------------------------------------------------------//
                                KC_LCTL, KC_HOME, KC_TRNS,		        KC_TRNS, KC_RALT, KC_RGUI,
-                                        KC_SPC,  KC_BSPC,           KC_RCTL, KC_ENT
+                                        KC_SPC,  KC_BSPC,           LALT(KC_ENT), KC_ENT
   ),
 
   [2] = LAYOUT_split_4x6_5(
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     NK_TOGG, _______, _______,  RGB_SAD, RGB_VAD, RGB_HUD,        RGB_HUI, RGB_VAI, RGB_SAI, _______, _______,  KC_VOLD,
 //---------------------------------------------------------//--------------------------------------------------------------//
                                KC_LCTL, KC_HOME, KC_TRNS,		    KC_TRNS, KC_RALT, QK_BOOT,
-                                        KC_SPC,  KC_BSPC,       KC_RCTL, KC_ENT
+                                        KC_SPC,  KC_BSPC,       LALT(KC_ENT), KC_ENT
   ),
 
   [3] = LAYOUT_split_4x6_5(
@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [6] = LAYOUT_split_4x6_5(
-    KC_ESC,  DK_1, DK_2, DK_3, DK_4, DK_5,		            DK_6, DK_7, DK_8,    DK_9,   DK_0,     DK_MINS,
+    KC_ESC,  DK_1, DK_2, DK_3, DK_4, DK_5,		            TO(7), DK_7, DK_8,    DK_9,   DK_0,     DK_MINS,
 //-------------------------------------------------//-----------------------------------------------------------//
     KC_TAB,  DK_Q, KC_P1, DK_E, DK_R, DK_T,		            DK_Y, DK_U, DK_I,    DK_O,   DK_P,     TO(0),
 //-------------------------------------------------//-----------------------------------------------------------//
@@ -111,6 +111,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_LEFT, KC_SPC, KC_RIGHT,        MO(2),  KC_ENT, KC_RGUI,
                                  KC_UP,  KC_LSFT,      KC_DEL, KC_RALT
   ),
+
+  [7] = LAYOUT_split_4x6_5(
+    KC_ESC,  DK_1, DK_2, DK_3, DK_4, DK_5,			            DK_6, DK_7, DK_8,    DK_9,   DK_0,     DK_MINS,
+//-------------------------------------------------//-----------------------------------------------------------//
+    KC_TAB,  DK_T, DK_Q, DK_W, DK_E, DK_R,			            DK_Y, DK_U, DK_I,    DK_O,   DK_P,     TO(0),
+//-------------------------------------------------//-----------------------------------------------------------//
+    KC_LSFT, DK_G, DK_A, DK_S, DK_D, DK_F,	                DK_H, DK_J, DK_K,    DK_L,   DK_AE,    DK_OSTR,
+//-------------------------------------------------//-----------------------------------------------------------//
+    KC_LCTL, DK_B, DK_Z, DK_X, DK_C, DK_V,                  DK_N, DK_M, DK_COMM, DK_DOT, DK_MINS,  DK_LABK,
+//-------------------------------------------------//-----------------------------------------------------------//
+                        KC_LCTL, KC_SPC, MO(1),		     MO(2),  KC_ENT, KC_RGUI,
+                                 KC_LSFT,  KC_BSPC,      KC_DEL, KC_RALT
+  )
 };
 
 /*
