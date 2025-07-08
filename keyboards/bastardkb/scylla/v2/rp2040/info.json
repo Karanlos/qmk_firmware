@@ -1,6 +1,6 @@
 {
     "keyboard_name": "Scylla RP2040",
-    "WS2812": {
+    "ws2812": {
         "pin": "GP0"
     },
     "usb": {
